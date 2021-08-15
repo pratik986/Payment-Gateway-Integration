@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration</title>
+</head>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/resposnive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<body>
+
+    <navbar id="nav">
+        <div id="logo"> <img id="logo" src="img/logo.png" alt="Child Education"> </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="navlink">
+            <li><a class="links" href="index.html">Home</a></li>
+            <li><a class="links" href="#analytics">Analytics</a></li>
+            <li><a class="links" href="about.html">About</a></li>
+            <li><a class="links" href="contact.html">Contact</a></li>
+        </ul>
+    </navbar>
+
+    <section id="home">
+        <h1 class="primary">Be part of the Good Campaign</h1>
+        <p id="paraa">"Education Is The Most Powerful Weapon Which You Can Use To Change The World."</p>
+        <p id="dash">― NELSON MANDELA ―</p>
+        <p id="pay"><form ><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HgfDPU8PvS5fED" async> </script></form> </p>      
+    </section>
+
+    <section id="analytics">
+        <div class="">
+            <h2 class="section_heading" data-aos="fade-up"> <span>Our Analytics</span> <span></span> </h2>
+            <div class="analytics_box" data-aos="fade-up">
+                <div class="analytics_item" data-aos="fade-right" data-delay="150">
+                    <img src="/img/donators.png" alt="Donators" />
+                    <h3 class="analytics_count"><span data-count="250">0</span>+</h3>
+                    <h5 class="analytics_term">Donors</h5>
+                </div>
+                <div class="analytics_item" data-aos="fade-up">
+                    <img src="/img/projects.png" alt="Projects"/>
+                    <h3 class="analytics_count"><span data-count="10">0</span>+</h3>
+                    <h5 class="analytics_term">Projects</h5>
+                </div>
+                <div class="analytics_item" data-aos="fade-left" data-delay="250">
+                    <img src="/img/common.png" alt="Team" />
+                    <h3 class="analytics_count"><span data-count="40">0</span>+</h3>
+                    <h5 class="analytics_term">Team</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; PratikMali | All Rights Reserved!
+        </div>
+    </footer>
+
+    <script defer src="js/index.js"></script>
+    <script defer src="js/analytics.js"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    
+</body>
+</html>

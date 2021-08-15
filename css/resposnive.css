@@ -1,0 +1,257 @@
+body{
+    overflow-x: hidden;
+}
+#logo {
+    margin: 0px 6px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+navbar{
+    position: relative;
+}
+navbar ul li {
+    margin: 4px 0px;
+  }
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}
+
+.navlink {
+    position: fixed;
+    background-color: rgba(20, 33, 61, 0.85);
+    height: 40vh;
+    width: 100%;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -50%);
+    transition: all 1s ease-out;
+    pointer-events: none; 
+}
+ .navlink.open {
+    clip-path: circle(1000px at 90% -20%);
+    -webkit-clip-path: circle(1000px at 90% -20%);
+    pointer-events: all;
+    margin-top: -38px;
+}
+.navlink li a {
+    font-size: 22px;
+    font-weight: lighter;
+}
+.navlink li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+.navlink li:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+}
+.navlink li:nth-child(3) {
+    transition: all 0.5s ease 0.2s;
+}
+.navlink li:nth-child(4) {
+    transition: all 0.5s ease 0.2s;
+}
+.navlink li {
+    opacity: 0;
+}
+li.fade {
+    opacity: 1;
+}
+.fade:not(.show) {
+      opacity: 1;
+  }
+.con-links {
+    margin-top: -10px;
+}
+#home{
+    height: 430px;
+}
+#home h1 {
+    font-size: 41px;
+    margin: 43px 0px;
+    margin-top: 170px;
+}
+#para{
+    margin-top: -16px;
+    padding: 5px 5px;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+}
+.dash{
+    padding-top: 25px  ;
+}
+.section_heading {
+    font-family: "Akaya Telivigala", cursive;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 212px;
+    padding-top: 20px;
+}
+.analytics_box {
+    margin-top: 180px;
+}
+
+/* About */
+.body{
+    background: url('../img/bg5.jpg') no-repeat center;
+}
+#contain{
+    margin-top: 186px;
+    margin-bottom: 286px;
+}
+.about-container{
+    display: flex;
+    width: 300px;
+    height: 370px;
+}
+#para{
+    padding: 8px 14px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+.about-footer{
+    position: relative;
+}
+/* Contact */
+#body{
+    background: url('../img/bg1.jpg') no-repeat center;
+} 
+#contact{
+    margin-top: 80px;
+    position: relative;
+    height: 100%;
+    margin-bottom: 47px;
+}
+contact-container{
+    margin-bottom: 96px;
+}
+.myform{
+    width: 113%;
+    margin-left: 5px;
+}
+.from-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myform input {
+    width: 122%;
+    padding: 5px;
+    font-size: 15px;
+    margin: 9px -4px;
+}
+.message textarea{
+    width: 67%;
+}
+.btn {
+    margin: -4px 0px;
+    padding: 10px 16px;
+    font-size: 16px;
+}
+.primary{
+    font-size: 28px;
+    margin-bottom: 26px;
+}
+footer {
+    width: auto;
+    display: block;
+    color: white;
+    
+}
+@media screen and (min-width: 768px) and  (max-width: 1024px){
+    #logo img {
+        height: 92px;
+        width: 86px;
+    }
+    navbar ul li {
+      margin: 4px 0px;
+    }
+    navbar ul li a {
+      padding: 5px 22px;
+      margin: 16px 8px;
+    } 
+    .navlink li a {
+        font-size: 38px;
+    }
+    .navlink{
+        flex-direction: row;
+    }
+    .navlink.open{
+        margin-top: -96px;
+    }
+    #home{
+        height: 620px;
+    }
+    #home::before{
+        height: 955px;
+    }
+    #home h1{
+        font-size: 3rem;
+    }
+    #home p , #word{
+        font-size: 2.5rem;
+    }
+    .section_heading{
+        margin-top: 230px;
+    }
+    .analytics_box {
+        margin-top: 180px;
+        margin-bottom: 89px;
+    }
+    
+    /* About */
+    #contain{
+        margin-top: 215px;
+        margin-bottom: 349px;
+    }
+    .about-container{
+        width: 90%;
+        height: 58%;
+    }
+    #para{
+        padding: 10px 14px; 
+        font-size: 2rem;
+    }
+    .about-footer{
+        position: relative;
+    }
+    /* Contact  */
+    .primary {
+        font-size: 52px;
+    }
+    label {
+        font-size: 32px;
+    }
+    .myform input {
+        font-size: 20px;
+    }
+    .message {
+        margin-left: 23px;
+    }
+    .message textarea {
+        width: 84%;
+    }
+      .contact-container {
+        height: 88vh;
+        margin-top: 58px;
+    }
+    .btn {
+        font-size: 24px;
+    }
+    footer{
+        font-size: 18px;
+    }
+}

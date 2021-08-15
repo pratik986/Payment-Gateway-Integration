@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/resposnive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    
+    <script defer src="js/index.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="body">
+    <navbar id="nav">
+        <div id="logo"> <img id="logo" src="img/logo.png" alt="Child Education"> </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="navlink">
+            <li><a class="links con-link" href="index.html"> Home </a></li>
+            <li><a class="links" href="#analytics"> Analytics </a></li>
+            <li><a class="links" href="about.html"> About </a></li>
+            <li><a class="links" href="contact.html"> Contact </a></li>
+        </ul>
+    </navbar>
+    <div class="container contact-container" id="contact">
+        <h1 class="primary">Contact Us</h1>
+        <form class="myform" onsubmit="event.preventDefault(); contactUs();" autocomplete="off" method="GET">
+            <div class="from-group">
+                <label for="name"> &nbsp; Name: &nbsp; </label>
+                <input type="text" name="name" id="Name" class="myInput" placeholder="Enter your Name">
+            </div>
+            <div class="from-group">
+                <label for="email"> &nbsp; Email: &nbsp; </label>
+                <input type="email" name="email" id="Email" class="myInput" placeholder="Enter your Email">
+            </div>
+            <div class="from-group">
+                <label for="phone"> &nbsp; Phone: &nbsp; </label>
+                <input type="phone" name="phone" id="Phone" class="myInput" placeholder="Enter your Number">
+            </div>
+            <div class="from-group message">
+                <label for="message"> &nbsp; Message: </label>
+                <textarea name="message" id="Message" class="myInput" placeholder="Enter your Message" cols="28"
+                    rows="8"></textarea>
+            </div>
+            <button class="btn" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; PratikMali | All Rights Reserved!
+        </div>
+    </footer>
+
+</body>
+</html>
