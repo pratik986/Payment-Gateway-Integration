@@ -122,7 +122,7 @@ navbar ul li a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: url('img/analytics.jpg');
+    background: url('../img/analytics.jpg');
     margin-top: 180px;
     margin-bottom: 50px;
   }
